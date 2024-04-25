@@ -1,0 +1,283 @@
+@import "_varibles";
+@import "_global";
+.main {
+    font-family: "Inter", sans-serif;
+}
+.header {
+    background-color: $backgrond-color;
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        &-item {
+            padding: 8px;
+        }
+        &-link {
+            font-size: $font-size-24;
+            color: $text-black-color;
+        }
+        &-logo {
+            font-size: $font-size-32;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+    }
+}
+.container {
+    position: relative;
+    &__slide {
+        &-img {
+            width: 100%;
+        }
+    }
+
+    &__top {
+        border: 1px solid black;
+        border-radius: 20px;
+        position: absolute;
+        background-color: #e9f3f6;
+        width: 1000px;
+        height: auto;
+        top: 480px;
+        left: 50%;
+        transform: translateX(-50%);
+        &-header {
+            padding: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            &-h3 {
+                font-size: $font-size-32;
+                color: $text-black-color;
+                font-weight: 500;
+            }
+            &-dec {
+                font-size: $font-size-16;
+                color: $text-black-primary-color;
+            }
+        }
+        &-bottom {
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 32px;
+            padding-bottom: 46px;
+            &-date {
+                display: flex;
+                flex-direction: column;
+
+                &-title {
+                    margin-bottom: 16px;
+                }
+                &-input {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    padding: 18px 32px;
+                    background-color: $backgrond-color;
+                    border-radius: 12px;
+                    &-icon {
+                        margin-right: 16px;
+                    }
+                    &-title {
+                    }
+                }
+            }
+            &-person {
+                display: flex;
+                flex-direction: column;
+
+                &-title {
+                    margin-bottom: 16px;
+                }
+                &-input {
+                    padding: 18px 32px;
+                    display: flex;
+                    background-color: $backgrond-color;
+                    border-radius: 12px;
+                    &-adu {
+                        display: flex;
+                    }
+                    &-chi {
+                        margin-left: 20px;
+                        display: flex;
+                    }
+                    &-icon {
+                        margin-right: 16px;
+                    }
+                }
+            }
+            &-btn {
+                cursor: pointer;
+                margin-top: 34px;
+                padding: 16px 32px;
+                background-color: $text-primary-color;
+                border-radius: 12px;
+                color: $backgrond-color;
+                font-size: $font-size-24;
+            }
+        }
+    }
+    &__mid {
+        margin-top: 285px;
+        background-color: #f3f3f3;
+        padding: 24px 36px;
+        &-img {
+            padding-top: 24px;
+        }
+    }
+    &__bottom {
+        padding: 48px 36px;
+    }
+}
+.special__top {
+    width: 100%;
+    display: flex;
+    padding: 24px;
+    &-left {
+        width: 70%;
+    }
+    &-title {
+        font-size: $font-size-32;
+        color: $text-primary-color;
+    }
+    &-h2 {
+        font-size: $font-size-64;
+        margin-top: 16px;
+        margin-bottom: 24px;
+    }
+    &-dec {
+        font-size: $font-size-24;
+    }
+    &-right {
+        width: 30%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: $font-size-32;
+        color: $text-primary-color;
+    }
+}
+
+.special__bottom {
+    margin-top: 48px;
+    padding: 12px;
+    margin-bottom: 48px;
+
+    &-item {
+        padding: 22px;
+        background-color: $backgrond-color;
+        box-shadow: #5e5e5e 1px 2px 20px 0px;
+        border-radius: 24px;
+    }
+    &-img {
+        width: 100%;
+    }
+    &-title {
+        font-size: $font-size-12;
+        padding-top: 24px;
+    }
+    &-h5 {
+        font-size: $font-size-24;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 0;
+    }
+    &-name {
+    }
+    &-number {
+    }
+    &-dec {
+        font-size: $font-size-12;
+        padding: 12px 0;
+    }
+    &-price {
+        font-size: $font-size-32;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        padding-top: 12px;
+        padding-bottom: 32px;
+    }
+    &-night {
+        font-size: $font-size-24;
+        font-weight: 300;
+    }
+}
+.footer {
+    color: $text-white-color;
+    background-color: #1e1e1e;
+    &__top {
+    }
+    &__left {
+
+        display: flex;
+        justify-content: center;
+        
+        padding-left: 90px;
+        padding-top: 100px;
+        flex-direction: column;
+
+    }
+    &__h2 {
+        color: $text-white-color;
+        font-size: 36px;
+    }
+    &__search {
+        padding: 24px 0;
+    }
+    &__input {
+        width: 60%;
+        height: 50px;
+        font-size: $font-size-24;
+        padding: 12px 24px;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+        border: none;
+    }
+    &__sub {
+        color: $text-white-color;
+        background-color: $text-primary-color;
+        border: none;
+        margin-left: -5px;
+        height: 50px;
+        padding: 0 24px;
+        font-size: $font-size-24;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 48px 0;
+        &-logo {
+            padding-bottom: 24px;
+            font-size: 48px;
+            font-family: "Inter", sans-serif;
+        }
+        &-list {
+        }
+        &-item {
+            padding: 4px 36px;
+        }
+        &-link {
+            font-size: 16px;
+            color: $text-white-color;
+        }
+    }
+    &__bottom {
+        border-top: 1px solid $text-black-primary-color;
+        font-size: $font-size-16;
+        color: $text-black-primary-color;
+        text-align: center;
+        padding: 12px 0;
+    }
+}

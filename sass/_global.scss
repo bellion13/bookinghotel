@@ -1,0 +1,17 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+ul li {
+    list-style: none;
+}
+a {
+    display: block;
+    text-decoration: none;
+    color: $text-black-color;
+}
+img {
+    width: 100%;
+}
